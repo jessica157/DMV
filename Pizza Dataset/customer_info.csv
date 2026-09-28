@@ -1,0 +1,14 @@
+Customer_ID,Age,City,Membership,Favorite_Drink
+CUST-01,25,Surabaya,Gold,Lemon Tea
+CUST-02,34,Jakarta,Silver,Coca Cola
+CUST-03,150,Bandung,Non-Member,Mineral Water
+CUST-04,28,Surabaya,Gold,Ice Tea
+CUST-05,42,Medan,Bronze,Juice
+CUST-06,-5,Jakarta,Silver,Lemon Tea
+CUST-07,31,Surabaya,Non-Member,Coca Cola
+CUST-08,22,Bandung,Gold,Ice Tea
+CUST-09,38,Surabaya,Bronze,Mineral Water
+CUST-10,45,Jakarta,Gold,Juice
+CUST-11,29,Medan,Silver,Lemon Tea
+CUST-12,50,Surabaya,Non-Member,Ice Tea
+CUST-99,30,Malang,Gold,Mineral Water

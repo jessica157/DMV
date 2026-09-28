@@ -1,0 +1,7 @@
+Pizza_ID,Pizza_Name,Size,Base_Price,Category
+PZ-01,Meat Lover,large,120000,Classic
+PZ-02,Supreme,MEDIUM,95000,Classic
+PZ-03,Cheese Burger,small,75000,Specialty
+PZ-04,Pepperoni,LARGE,110000,Classic
+PZ-05,Veggie Garden,medium,-50000,Specialty
+PZ-06,Tuna Melt,large,105000,Specialty
