@@ -1,0 +1,37 @@
+#### Soal 1: Data Integration
+
+1. Terlebih dahulu, identifikasi apakah terdapat duplikasi ID pada ketiga dataset (pizza_orders, pizza_menu, dan customer_info)? Jika ada, lakukan penanganan → Hapus duplikat.
+2. Tampilkan jumlah ID unik/*unique* dari ketiga data untuk setiap kolom ID (`Order_ID`, `Customer_ID`, `Pizza_ID`).
+3. Gabungkan ketiga data (pizza_orders, pizza_menu, dan customer_info) menjadi satu tabel terpadu berdasarkan *key* yang bersesuaian. Hasil penggabungan harus memuat minimal: `Order_ID`, `Customer_ID`, `Age`, `Pizza_ID`, `Pizza_Name`, `Size`, `Base_Price`, `Quantity`, `Discount`, `Order_Channel`.
+4. Tunjukkan *key* yang tidak memiliki pasangan. Hapus baris dari *key* yang tidak memiliki pasangan → Baris yang memiliki nilai `NaN` lebih dari 3.
+5. Tampilkan jumlah baris dan kolom dari hasil penggabungan dan penghapusan tersebut.
+
+#### Soal 2: Data Cleaning
+
+1. Lakukan standarisasi format penulisan pada kolom `Order_Channel` dan `Size` → Ubah seluruh data pada kolom tersebut menjadi format kapital.
+2. Ubah *missing value* pada kolom `Discount` menjadi nilai 0.
+3. Deteksi outlier pada kolom `Quantity` → Pemesanan lebih dari 10 pcs dianggap outlier.
+4. Ubah seluruh nilai yang tidak sesuai pada kolom `Quantity` , `Base_Price` , dan `Age` menjadi *missing value* (`NaN`) kemudian lakukan imputasi dengan menggunakan nilai median data.
+
+#### Soal 3: Data Transformation
+
+Buat kolom baru dengan judul `Total_Price` untuk menghitung Total Harga dari pembelian tiap orderan dengan rumus sebagai berikut.
+
+$$
+Total Price = Base Price × Quantity × (1 − Discount)
+$$
+
+#### Soal 4: Data Discretization
+
+Kelompokkan pelanggan yang tercatat pernah melakukan pembelian (ambil dari dataset hasil gabungan) berdasarkan `Age` menjadi kategori sebagai berikut.
+
+- Dewasa Muda → kurang dari 30 tahun
+- Dewasa → 30 - 40 tahun
+- Dewasa Madya → lebih dari 40 tahun
+
+Simpan hasil pengelompokkan tersebut ke dalam kolom baru: `Age_Group`
+
+#### Soal Bonus: Visualisasi
+
+1. Visualisasikan *top* 3 produk yang paling diminati berdasarkan kuantitas penjualan (`Quantity`).
+2. Visualisasikan *top* 3 produk yang menyumbang revenue terbesar (berdasarkan `Total_Price`).
